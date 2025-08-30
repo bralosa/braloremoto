@@ -1,0 +1,41 @@
+git config --global user.name "Diego Nobile"
+git config --global user.email "koop185gnulinux@gmail.com"
+
+git init (activa el control version sobre una carpeta)
+git status (estado de los archivos dentro de una repo local)
+git add (nombre.extension) -> stage (archivos que git tiene en cuenta para modificaciones)
+git add . (todos los archivos) (agregar elementos seleccionados al staging area)
+
+git rm --cached <archivo> para sacar del area de stage
+git restore <archivo> para descartar los cambios en el directorio de trabajo
+
+git commit -m "Primer commit" (agrega elementos al GIT directory)
+
+git diff 
+git checkout <file> -> retrocede  (del GIT directory -> Working Directory)
+
+git log 
+git log --oneline
+git log --graph (grafo)
+git reset --hard  297fdec
+git reset --soft  297fdec
+
+git branch (ver todas las ramas)
+git checkout -b <nombreRama> -> crea y nos situa en una rama
+git checkout <nombreRama>
+
+git merge <nombre rama a fusionar, previo a pasarse a la rama principal>
+
+git branch --d <rama>
+git branch --D <rama fusionada previamente>
+
+git remote -v 
+git push origin <rama>
+
+git clone (url-remoto)
+
+git fetch --> traer el contenido de todas las ramas remotas a tu local
+git push  --> subir el contenido, dejarlo en un remoto online
+git pull --> Traer el contenido actualizar la rama local donde estoy situada respecto a la remota, si estoy en master me trae la info de master
+
+https://github.com/settings/tokens personal token clasic
